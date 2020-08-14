@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement = "Bottom"
+            BarBackgroundColor = "{OnPlatform Android = #white}"
+            xmlns:forms="http://xamarin.com/schemas/2014/forms/design"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:MA.Views" x:Class="MA.Views.tabbedpage">
+<local:home>
+	</local:home>
+	<local:saved>
+	</local:saved>
+    <local:add>
+	</local:add>
+	<local:account>
+	</local:account>
+    <ContentPage>
+        <ContentPage.ToolbarItems>
+            <ToolbarItem IconImageSource="Free_Sample_By_Wix.jpeg"/>
+        </ContentPage.ToolbarItems>
+    </ContentPage>
+</TabbedPage>

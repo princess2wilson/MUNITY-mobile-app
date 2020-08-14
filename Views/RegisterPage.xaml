@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" x:Class="MA.Views.RegisterPage">
+    <ContentPage.Content>
+     <StackLayout BackgroundColor="#ffffff">
+
+         <ScrollView>
+
+
+             <Grid>
+                  
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="44"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="44"/>
+                 <RowDefinition Height="44"/>
+                 <RowDefinition Height="44"/>
+                 <RowDefinition Height="44"/>
+                 <RowDefinition Height="44"/>
+
+
+
+
+            </Grid.RowDefinitions>
+
+               <StackLayout/>
+                 <Image Source="Free_Sample_By_Wix.jpeg"  Grid.Row="0" WidthRequest="200" HeightRequest="110" />
+                 <Label Grid.Row="1"  Text="Sign Up Now" FontSize="20" TextColor="Black"  HorizontalOptions="Center" />
+                 <Label Grid.Row="2"  Text="Please fill the details and create an account" FontSize="Small" TextColor="Gray" HorizontalOptions="Center" />
+                 <Entry x:Name="NameEntry" Placeholder="FullName                                                          "
+                        Grid.Row="3" HorizontalOptions="CenterAndExpand"  />
+                 <Entry x:Name="MobileEntry" Placeholder="Mobile                                                               "
+                        Grid.Row="4" HorizontalOptions="CenterAndExpand"  />
+                 <Entry x:Name="Email" HorizontalOptions="Center" Placeholder="Email                                                                 " Grid.Row="5"  />
+                 <Entry HorizontalOptions="Center" x:Name="Password" Placeholder="Password                                                          " Grid.Row="6"  />
+                 <Label  Text="       Password must be atleast 6 characters" Grid.Row="7" FontSize="Micro" TextColor="Gray" />
+                 <Button Text="Sign up"  BackgroundColor ="#af69c4" Grid.Row="8"
+                         TextColor="White" FontSize="Body" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="44" WidthRequest="345" />
+                 <Label Grid.Row="9" HorizontalOptions="Center" Margin="0,0,30,0"  VerticalOptions="CenterAndExpand"  BackgroundColor="Transparent"  Text="Already have an account ? "  FontSize="Small" TextColor="Gray"/>
+                <Button Clicked="Button_Clicked" Grid.Row="9" HorizontalOptions="Center" TextColor="#af69c4" Margin="170,0,0,0" Text=" Log in" FontSize="Small" BackgroundColor="Transparent"  />
+                 <Label Text="Or connect with " Grid.Row="11" FontSize="Small" HorizontalOptions="Center" TextColor="Gray"/>
+                 
+           
+             
+            <forms:AnimationView
+            
+            x:Name="animView"
+            Animation="logoo1.json" 
+	        Loop="True"
+	        AutoPlay="True"
+            Grid.Row="12"
+            HorizontalOptions="FillAndExpand"
+            HeightRequest="50"
+                Margin="0,0,90,0"
+              />
+
+                   <forms:AnimationView
+            
+            x:Name="animView2"
+            Animation="logoo2.json" 
+	        Loop="True"
+	        AutoPlay="True"
+            Grid.Row="12"
+            HorizontalOptions="FillAndExpand"
+            HeightRequest="50"
+            Margin="70,0,0,0"
+            VerticalOptions="FillAndExpand" />
+           
+
+  </Grid>
+
+         </ScrollView>
+
+
+
+     </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

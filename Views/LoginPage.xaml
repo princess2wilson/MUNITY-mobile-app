@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             mc:Ignorable="d"
+             x:Class="MA.Views.LoginPage">
+   <StackLayout BackgroundColor="#ffffff">
+
+         <ScrollView>
+
+
+             <Grid>
+                  
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="44"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+
+
+
+            </Grid.RowDefinitions>
+
+                  <Image Source="Free_Sample_By_Wix.jpeg"  Grid.Row="0" WidthRequest="200" HeightRequest="110" />
+                 <Label Grid.Row="1" Text="Log In Now" FontSize="21"  HorizontalOptions="Center" />
+                 <Label Grid.Row="2" Text="Please login to continue " FontSize="Small" TextColor="Gray" HorizontalOptions="Center" />
+                 <Entry x:Name="Email" Placeholder="Email                                                                 "
+                        Grid.Row="3" HorizontalOptions="CenterAndExpand"  />
+                 <Entry x:Name="Password" HorizontalOptions="Center" Placeholder="Password                                                         " Grid.Row="4"  />
+                 <Button x:Name="forgot" Text="Forgot Password?           " TextColor="#af69c4" Grid.Row="5" HorizontalOptions="End" BackgroundColor="Transparent" />
+                 <Button Text="Log in" Clicked="Button_Clicked_1"  BackgroundColor ="#af69c4" Grid.Row="7" TextColor="White" FontSize="Body" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="44" WidthRequest="280" />
+                 <Label Grid.Row="8" HorizontalOptions="Center" Margin="0,0,30,0"  VerticalOptions="CenterAndExpand"  BackgroundColor="Transparent"  Text="Already have an account ? "  FontSize="Small" TextColor="Gray"/>
+                <Button Clicked="Button_Clicked" Grid.Row="8" HorizontalOptions="Center" TextColor="#af69c4" Margin="180,0,0,0" Text="Sign Up" FontSize="Small" BackgroundColor="Transparent"  />
+                 <Label Text="Or connect with " Grid.Row="10" FontSize="Small" HorizontalOptions="Center" TextColor="Gray" />
+                 
+            
+
+            <forms:AnimationView
+            
+            x:Name="animView"
+            Animation="logoo1.json" 
+	        Loop="True"
+	        AutoPlay="True"
+            Grid.Row="11"
+            HorizontalOptions="FillAndExpand"
+            HeightRequest="50"
+                Margin="0,0,90,0"
+              />
+
+                   <forms:AnimationView
+            
+            x:Name="animView2"
+            Animation="logoo2.json" 
+	        Loop="True"
+	        AutoPlay="True"
+            Grid.Row="11"
+            HorizontalOptions="FillAndExpand"
+            HeightRequest="50"
+            Margin="70,0,0,0"
+            VerticalOptions="FillAndExpand" />
+            
+            
+
+ </Grid>
+
+         </ScrollView>
+
+     </StackLayout>
+</ContentPage>
